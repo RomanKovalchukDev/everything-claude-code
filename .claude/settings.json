@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(**/.env*)",
+      "Write(~/.ssh/**)",
+      "Write(~/.aws/**)",
+      "Bash(curl * | bash)",
+      "Bash(wget * | bash)",
+      "Bash(ssh *)",
+      "Bash(scp *)",
+      "Bash(nc *)",
+      "Bash(git push *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean *)",
+      "Bash(rm -rf *)"
+    ],
+    "defaultMode": "default"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "./scripts/statusline.sh"
+  },
+  "alwaysThinkingEnabled": true
+}
